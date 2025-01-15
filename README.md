@@ -10,4 +10,5 @@ This project is provided "as-is" without any warranties. Use it at your own risk
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
-suricata rule: alert ip any any -> any any (msg:"Detected file with known malicious hash (SHA256, SHA1, or MD5)"; filesha256:filehash_sha256.list; filesha1:filehash_sha1.list; filemd5:filehash_md5.list; filestore; sid:1700001; rev:1;)
+note:
+suricata rule: alert ip any any -> any any (msg:"Detected file with known malicious hash (SHA256)"; filesha256:filehash_sha256.list; filestore; sid:1700001; rev:2;)
